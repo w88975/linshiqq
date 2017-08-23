@@ -99,14 +99,13 @@ app.post('/qq', async (req, res) => {
             })
             if (data4.statusCode === 200) {
                 console.log('成功')
-                res.send('成功')
+                res.sendFile(process.cwd() + '/cg.html')
             }
         }
     }
 })
 
 app.get('/', async (req, res) => {
-
     res.sendFile(process.cwd() + '/index.html')
 })
 app.listen(4444)
