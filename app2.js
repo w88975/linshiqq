@@ -149,6 +149,7 @@ app.post('/qq', async (req, res) => {
         // res.write(`<div>等待5秒</div>`)
         await sleep(1000)
     }
+    res.write(`<b>完成!</b>`)
     res.end()
 })
 
